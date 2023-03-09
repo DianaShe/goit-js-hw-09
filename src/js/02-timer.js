@@ -30,7 +30,7 @@ flatpickr("#datetime-picker", options);
 
 const timer = {
   start(){
-    intervalId = null;
+    this.intervalId = null;
     startBtn.setAttribute('disabled', 'true');
     this.intervalId = setInterval(()=> {
       const currentDate = Date.now();
